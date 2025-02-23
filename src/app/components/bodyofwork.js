@@ -1,13 +1,6 @@
 import Image from "next/image";
 
-const images = [
-  "/9.jpg",
-  "/8.jpg",
-  "/3.jpg",
-  "/7.jpg",
-  "/6.jpg",
-
-];
+const images = ["/11.jpg", "/8.jpg", "/3.jpg", "/7.jpg", "/6.jpg"];
 
 export default function BodyOfWorks() {
   return (
@@ -22,7 +15,10 @@ export default function BodyOfWorks() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {images.map((src, index) => (
-          <div key={index} className="relative overflow-hidden rounded-2xl shadow-xl bg-white p-2 group">
+          <div
+            key={index}
+            className="relative overflow-hidden rounded-2xl shadow-xl bg-white p-2 group"
+          >
             <div className="rounded-xl overflow-hidden w-full">
               <Image
                 src={src}
