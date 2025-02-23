@@ -1,0 +1,241 @@
+@import url(https://db.onlinewebfonts.com/c/879269be836bf8d970d4ef4fb0e54f42?family=GT+America+Extended+Regular);
+
+:root {
+    --shadow: #0e1012;
+    --royal: #1a4572;
+    --black: black;
+    --pale: #f3f6fa;
+    --periwinkle: #e8e5f0;
+    --white: white;
+    --primary-font: 'GT America Extended Regular', Helvetica, Arial, sans-serif;
+}
+
+.suspenseful-world1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 50vh;
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    font-weight: 900;
+}
+
+.text-content1 {
+    max-width: 800px;
+}
+
+.text-content1 h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.text-content1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Image gallery responsiveness */
+.image-gallery-container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image-gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Main content section */
+.suspenseful-world {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 60px 10%;
+    background-color: var(--shadow);
+    color: var(--pale);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    justify-content: space-between;
+}
+
+/* Text content responsiveness */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: #333;
+    padding-left: 50px;
+}
+
+.text-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-out;
+    color: var(--white);
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    animation: fadeInUp 1.5s ease-out;
+    color: var(--pale);
+    font-weight: 500;
+}
+
+/* Video content responsiveness */
+.video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.video-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .suspenseful-world {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 10%;
+    }
+
+    .text-content, .video-content {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    .video-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .suspenseful-world1 {
+        padding: 40px 10px;
+    }
+
+    .text-content1 h1 {
+        font-size: 2rem;
+    }
+
+    .text-content1 p {
+        font-size: 1rem;
+    }
+
+    .suspenseful-world {
+        padding: 30px 5%;
+    }
+
+    .text-content, .video-content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-content p {
+        font-size: 0.95rem;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content1 p {
+        font-size: 0.9rem;
+    }
+
+    .suspenseful-world {
+        padding: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .caption {
+        font-size: 1.5rem;
+    }
+
+    .video-container {
+        width: 90%;
+    }
+}

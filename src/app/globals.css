@@ -1,0 +1,46 @@
+:root {
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  
+    background: linear-gradient(to bottom, #0d0d0d, #333333, #666666, #cccccc);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, #0d0d0d, #333333, #666666, #cccccc);
+  /* From dark charcoal to light grey */
+  font-family: var(--font-mono);
+  border-radius: var(--border-radius);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
