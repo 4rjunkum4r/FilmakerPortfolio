@@ -1,1 +1,1 @@
-Project for my client who is a filmography.
+Project for my client who is a filmographer.
